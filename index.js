@@ -26,7 +26,10 @@ class mainClass {
     const proxy = "";
 
     const gmail = "medinerdal29@gmail.com";
-    school_id = "30";
+    var items = Array("30", "47" , "83", "86", "125")
+
+    
+    var school_id = items[Math.floor(Math.random()*items.length)];
 
     await driveEngine.CreateTDrive(userID, username, gmail, school_id, proxy)
     console.log('Task Fnish ! New task is starting...')
