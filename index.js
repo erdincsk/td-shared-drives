@@ -25,8 +25,8 @@ class mainClass {
     // If available, enter your proxy connection information, it can block creating a proxy site.
     const proxy = "";
 
-    const gmail = " THIS AREA GMAIL ADDRESS ";
-    const school_id = "THIS AREA SCHOOL ID  - TD ";
+    const gmail = "ekeloglu@gmail.com";
+    const school_id = "30";
 
     await driveEngine.CreateTDrive(userID, username, gmail, school_id, proxy)
     console.log('Task Fnish ! New task is starting...')

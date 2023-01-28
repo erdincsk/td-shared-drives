@@ -6,7 +6,7 @@ var { activeUserList } = require('../globals/activeUsers');
 const postRequest = require('../components/postRequest');
 // Buraya anticaptcha websitesi - key bilginizi girin.
 // Enter your anti captcha website - key here.
-const anticaptcha = require('../components/anticaptcha')(' KEY AREA ! '); 
+const anticaptcha = require('../components/anticaptcha')('4757967f5b18d4c36874a2d83946222f'); 
 
 class main {
     async checkProxy(proxy) {
