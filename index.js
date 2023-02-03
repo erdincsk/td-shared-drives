@@ -6,20 +6,12 @@ class mainClass {
         return new Promise(async(resolve, reject) => {
         try {
 
-            fetch('https://api.namefake.com', {
-                method: 'GET'
-            })
-            .then((response) => {
-                return response.json();
-            })
-            .then(async(responseJSON) => {
-    
-    
     function getRandomInt(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
-    
-    const username = responseJSON.maiden_name;
+
+    //const username = "DriveAdi";
+    const username = "sd_"+getRandomInt(100,999);
     const userID = ""+Date.now()+"";
     // Varsa proxy bağlantı bilgilerinizi girin, proxysiz site oluşturma engeli uygulayabilir.
     // If available, enter your proxy connection information, it can block creating a proxy site.
@@ -27,8 +19,6 @@ class mainClass {
 
     const gmail = "medinerdal29@gmail.com";
     var items = Array("30", "47" , "83", "86", "125")
-
-    
     var school_id = items[Math.floor(Math.random()*items.length)];
 
     await driveEngine.CreateTDrive(userID, username, gmail, school_id, proxy)
@@ -36,7 +26,6 @@ class mainClass {
     main.start() // Kısır Döngü
 
 
-})
         } catch (error) {
             reject(error);
         }
@@ -46,4 +35,3 @@ class mainClass {
 const main = new mainClass();
 module.exports = main;
 main.start();
-
